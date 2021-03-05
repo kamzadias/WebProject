@@ -1,0 +1,221 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header__image{
+	width: 30px;
+	height: 30px;
+}
+.container__video {
+	position: relative;
+	background-color: black;
+	height: 75vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+}
+.container__video video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+.container__video .container {
+	position: relative;
+	z-index: 2;
+}
+
+.container__video .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+}
+.video__text{
+	width: 50%;
+	height: 300px;
+}
+.video__form{
+	margin-bottom: 100px;
+}
+.video__form button{
+	background-color:#E0E6F8;
+}
+.carousel-control-prev-icon {
+	width: 40px;
+	height: 40px;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23c593d8' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon {
+	width: 40px;
+	height: 40px;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23c593d8' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+.card-img-top{
+	max-height: 163px;
+}
+.container__topweek,.container__news{
+	margin-top: 40px;
+}
+.container-destination {
+	padding: 50px 67px 50px 50px;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	height: 100%;
+	grid-column-gap: 20px;
+}
+.container-destination-row1{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 300px 300px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+}
+.container-destination-row2{
+	display: grid;
+	grid-template-columns: 98%;
+	grid-template-rows: 600px;
+}
+.container-destination span{
+	font-size: 30px;
+	color: white;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.destination__restaraunts {
+	background-image: url("https://i.pinimg.com/originals/88/24/7e/88247e8e4b0fea1d75f07aedeb887b71.jpg");
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	padding: 550px 0 0 20px;
+}
+.destination__gym {
+	background-image: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	padding: 240px 0 0 20px;
+}
+.destination__sc {
+	background-image: url("https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i6f5550cb4e000039/version/1457437541/best-shopping-centers-in-europe-galeries-lafayette-copyright-christian-bertrand-european-best-destinations.jpg");
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	padding: 240px 0 0 20px;
+}
+.destination__hotels {
+	grid-column: span 2;
+	background-image: url("https://www.intechnic.com/hubfs/Blog/Featured%20Images/Best%20Hotel%20Website%20Designs.jpg");
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	padding: 240px 0 0 20px;
+}
+.container__news .card{
+	width:200px;
+	margin: auto;
+	height: 200px;
+}
+li {
+	list-style-type: none; /* Убираем маркеры */
+  }
+  ul {
+	margin-left: 0; /* Отступ слева в браузере IE и Opera */
+	padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+  }
+footer{
+	background-color: #f0f0f0;
+	color: black;
+	padding: 40px 40px;
+}
+.container__footer {
+	margin-top: 100px;
+
+}
+.footer-left {
+	margin-right: 20px;
+}
+.footer-left a{
+	
+	text-decoration: none;
+	color: black;
+}
+.footer-left a:hover{
+	text-decoration: underline;
+}
+.footer__icon {
+
+}
+.left__list {
+	margin-left: 20px;
+}
+.right__list {
+	margin-left: 20px;
+}
+.footer-right a{
+	margin-right: 20px;
+}
+.footer-right img{
+	width: 30px;
+	height: 30px;
+}
+@media (pointer: coarse) and (hover: none) {
+	.container__video {
+	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+	}
+	.container__video video {
+	  display: none;
+	}
+ }
+@media(max-width:1200px){
+	.video__form{
+		margin-bottom: 20px;
+	}
+	.container-destination {
+		padding: 50px 67px 50px 50px;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 620px 300px;
+		height: 100%;
+	}
+	.container-destination-row1{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 300px 300px;
+		grid-row-gap: 10px;
+		grid-column-gap: 10px;
+	}
+	.container-destination-row2{
+		display: grid;
+		height: 600px;
+	}
+	.destination__restaraunts{
+		height: 300px;
+		width: 100%;
+		padding: 250px 0 0 20px;
+		background-image: url("https://www.dashef.com/wp-content/uploads/2016/01/waiter_ok_sign-1024x438-1014x487.jpg");
+	}
+	.card{
+		margin-bottom: 30px;
+	}
+}
+@media(max-width:992px){
+	.video__text{
+		width: 70%;
+		height: 300px;
+	}
+	.video__form{
+		margin-bottom: 20px;
+	}
+}
